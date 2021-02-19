@@ -1,0 +1,153 @@
+body {
+  /* background-color: rgb(203, 255, 255); */
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 500;
+  margin: 0px;
+  display: flex;
+  justify-content: center;
+  background-image: url('../media/spikes.png');
+  background-repeat: repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.container {
+  display: grid;
+  grid-template-rows: 40% 50% auto;
+  /* width: 60%; */
+  width: 100%;
+  margin: 0% 25%;
+}
+
+/* Translate Buttons */
+#translate-btn {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding-top: 240px;
+  padding: 80px;
+  /* padding-top: 120px; */
+  /* width: 100%; */
+  /* align-items: flex-end; */
+}
+#translate-btn img {
+  padding: 20px;
+  width: 30%;
+  max-width: 100px;
+  cursor: pointer;
+
+}
+
+/* Text Box */
+.text-box {
+  display: flex;
+  flex-flow: row wrap-reverse;
+  align-self: flex-start;
+  width: 100%;
+  /* height: 100%; */
+  height: 429px;
+  overflow: scroll;
+  background-color: rgba(20, 20, 20, 0.8);
+  border-radius: 10px 10px 0px 0px;
+  padding: 0px 10px;
+  padding-top: 10px;
+}
+
+.text-item {
+  display: flex;
+  flex-direction: column ;
+  width: 47%;
+  height: 100px;
+  border: 1px solid rgb(20, 20, 20);
+  border-radius: 10px;
+  margin: 10px;
+  background-color: rgba(20, 20, 20, 0.9);
+  color: rgb(218, 218, 218);
+}
+.text-user {
+  background-color: rgba(34, 37, 39, 0.4);
+  border-radius: 10px 10px 0px 0px;
+  border-bottom: 1px solid rgb(39, 39, 39);
+  padding: 3px 10px;
+}
+.text-content {
+  background-color: rgba(20, 20, 20, 0.6);
+  border-radius: 0px 0px 10px 10px;
+  padding: 3px 10px;
+}
+
+
+/* Language picker */
+.languages {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-self: flex-end;
+  background-color: rgba(20, 20, 20, 0.938);
+  border-radius: 0px 0px 0px 0px;
+  padding: 10px;
+  height: 65%;
+  width: 100%;
+  z-index: 10;
+}
+.lang-div {
+  margin: 0px 10px;
+  width: 25%;
+}
+.lang-name {
+  color: aliceblue;
+}
+.languages select {
+  cursor: pointer;
+  width: 100%;
+  height: 30px;
+}
+
+.save-convo-btn {
+  transition: 300ms;
+  width: 100%;
+  margin-top: 10px;
+  height: 40px;
+  font-size: 18px;
+  color: rgb(153, 255, 204);
+  font-weight: 600;
+  background-color: rgba(20, 20, 20, 0.938);
+  border: 2px solid rgb(46, 46, 46);
+  border-radius: 5px;
+
+}
+
+.save-convo-btn:hover {
+  transform: scale(1.05);
+  background-color: rgba(81, 255, 174, 0.938);
+  border: 1px solid rgb(70, 70, 70);
+  color: rgb(37, 37, 37);
+  cursor: pointer;
+}
+
+.save-convo-btn  {
+  -webkit-tap-highlight-color: transparent;
+}
+
+:focus {
+  outline: none !important;
+
+}
+
+.save-convo-div {
+  transition: 1s;
+  position: absolute;
+  background-color: rgba(20, 20, 20, .95);
+  left: 38%;
+  top: 60%;
+  color: rgba(81, 255, 174, 1);
+  font-weight: 600;
+  font-size: 48px;
+  padding: 10px 32px;
+  /* border-radius: 20px; */
+  border: 1px solid rgba(81, 255, 174, 1);
+  z-index: 10;
+  opacity: 0;
+}
+

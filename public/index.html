@@ -1,0 +1,92 @@
+<html>
+  <head>
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/recorderjs/0.1.0/recorder.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js" integrity="sha512-bZS47S7sPOxkjU/4Bt0zrhEtWx0y0CRkhEp8IckzK+ltifIIE9EMIMTuT/mEzoIMewUINruDBIR/jJnbguonqQ==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.0/FileSaver.min.js" integrity="sha512-csNcFYJniKjJxRWRV1R7fvnXrycHP6qDR21mgz1ZP55xY5d+aHLfo9/FcGDQLfn2IfngbAHd8LdfsagcCqgTcQ==" crossorigin="anonymous"></script>
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/main.css">
+    <link href="media/mic.svg">
+    <!-- <link rel="stylesheet" href="css/mobile.css"> -->
+    <title>Translator App</title>
+  </head>
+  <body>
+
+    <div class="container">
+      <div id="translate-btn">
+        <!-- <img src="https://www.flaticon.com/svg/vstatic/svg/709/709950.svg?token=exp=1613479436~hmac=91b133a8f42b32001738f631776fc61b"> -->
+        <img id="translate-btn-img" src="media/mic.svg">
+      </div>
+      <!-- Text container -->
+      <div class="text-box">
+          <!-- <div class="text-item">
+            <div class="text-user">Native</div>
+            <div class="text-content">Lorem  ipsum dispum doo, coo coo coo, soo soo soo</div>
+          </div>
+          <div class="text-item">
+            <div class="text-user">Foreign</div>
+            <div class="text-content">Lorem  ipsum dispum doo, coo coo coo, soo soo soo</div>
+          </div> -->
+      </div>
+      <!-- Language settings -->
+      <div class="languages">
+        <div class="lang-div">
+          <div class="lang1-name lang-name">Native</div>
+          <select name="lang1" id="lang1" onchange="setLang()">
+            <option class="lang-opt" value="en">English</option>
+            <option class="lang-opt" value="es">Spanish</option>
+            <option class="lang-opt" value="ja">Japanese</option>
+            <option class="lang-opt" value="zh">Chinese</option>
+            <option class="lang-opt" value="fr">French</option>
+            <option class="lang-opt" value="de">Greek</option>
+            <option class="lang-opt" value="ht">Haitian Creole</option>
+            <option class="lang-opt" value="hi">Hindi</option>
+            <option class="lang-opt" value="he">Hebrew</option>
+            <option class="lang-opt" value="la">Latin</option>
+            <option class="lang-opt" value="ru">Russian</option>
+            <option class="lang-opt" value="sv">Swedish</option>
+            <option class="lang-opt" value="th">Thai</option>
+          </select>
+        </div>
+        <div class="lang-div">
+          <div class="lang2-name lang-name">Foreign</div>
+          <select name="lang2" id="lang2" onchange="setLang()">
+            <option class="lang-opt" value="es">Spanish</option>
+            <option class="lang-opt" value="en">English</option>
+            <option class="lang-opt" value="ja">Japanese</option>
+            <option class="lang-opt" value="zh">Chinese</option>
+            <option class="lang-opt" value="fr">French</option>
+            <option class="lang-opt" value="de">Greek</option>
+            <option class="lang-opt" value="ht">Haitian Creole</option>
+            <option class="lang-opt" value="hi">Hindi</option>
+            <option class="lang-opt" value="he">Hebrew</option>
+            <option class="lang-opt" value="la">Latin</option>
+            <option class="lang-opt" value="ru">Russian</option>
+            <option class="lang-opt" value="sv">Swedish</option>
+            <option class="lang-opt" value="th">Thai</option>
+          </select>
+        </div>
+        <div class="lang-div">
+          <div class="lang-voice-name lang-name">Voice</div>
+          <select name="lang-voice" id="lang-voice" onchange="setLang()">
+            <option class="lang-opt" value="A">Agnostic</option>
+            <option class="lang-opt" value="M">Male</option>
+            <option class="lang-opt" value="F">Female</option>
+          </select>
+        </div>
+        <div class="lang-div">
+          <button class="save-convo-btn">Save Convo</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="save-convo-div">
+      Convo Saved!
+    </div>
+
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+  </body>
+</html>

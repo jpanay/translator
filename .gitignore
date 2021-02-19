@@ -1,0 +1,12 @@
+/node_modules
+.vscode
+.DS_Store
+README.txt
+package-lock.json
+
+/public/audioFiles
+/public/.DS_Store
+/public/js/.DS_Store
+
+/server/audioFiles
+/server/googleKeys
